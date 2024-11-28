@@ -1,0 +1,84 @@
+/* MAIN */
+
+body {
+    background-color: #455a68;
+    color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 2px solid #0a0a0acb;
+}
+header h1 {
+    font-size: 2rem;
+    font-family: 'Georgia' serif;
+    color: #62676bbe;
+    margin: 0;
+}
+
+/* image */
+#image-container {
+    margin-bottom: 1rem;
+}
+#image-container .bg-dark {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px #00000099;
+}
+#adventure-image {
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    max-height: 300px; 
+    object-fit: cover; 
+}
+
+/* text*/
+#text-container {
+    margin-bottom: 1rem;
+}
+#text-container .bg-dark {
+    border-radius: 10px;
+    box-shadow:  0 8px 16px #00000099;
+}
+#text-container p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: #e9ecef;
+}
+
+/* button suivant */
+#next-button {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #2e2b2b;
+    color: #f8f9fa;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+#next-button:hover {
+    background-color: #2e2b2b;
+    transform: scale(1.05);
+}
+#next-button:active {
+    background-color: #2e2b2b;
+    transform: scale(0.95);
+}
+
+/* Media Queries */
+@media (max-with:768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    #image-container .bg-dark, #text-container .bg-dark {
+        padding: 2rem;
+    }
+    
+    #next-button {
+        font-size: 0.9rem;
+    }
+}
